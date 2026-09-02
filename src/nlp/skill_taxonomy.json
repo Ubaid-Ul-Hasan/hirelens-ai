@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "description": "Canonical skill taxonomy for HireLens AI. Each top-level key is a category. Each skill has a canonical display name, a list of alias surface forms (case-insensitive, matched after normalization), and a list of related_skill canonical names used for PARTIAL/transferable credit (never an automatic exact match).",
+    "version": "0.1.0"
+  },
+  "categories": {
+    "AI / ML": {
+      "Machine Learning": {"aliases": ["ml", "machine learning"], "related": ["Deep Learning"]},
+      "Deep Learning": {"aliases": ["dl", "deep learning"], "related": ["Machine Learning", "PyTorch", "TensorFlow"]},
+      "NLP": {"aliases": ["natural language processing", "nlp"], "related": ["Machine Learning", "Hugging Face"]},
+      "Computer Vision": {"aliases": ["cv", "computer vision", "image processing"], "related": ["Deep Learning"]},
+      "Scikit-learn": {"aliases": ["sklearn", "sci-kit learn", "scikit learn"], "related": ["Machine Learning"]},
+      "PyTorch": {"aliases": ["torch", "pytorch"], "related": ["TensorFlow", "Deep Learning"]},
+      "TensorFlow": {"aliases": ["tensorflow", "keras"], "related": ["PyTorch", "Deep Learning"]},
+      "Hugging Face": {"aliases": ["huggingface", "hugging face", "transformers library"], "related": ["NLP", "PyTorch"]},
+      "MLflow": {"aliases": ["mlflow", "ml flow"], "related": ["Model Deployment"]},
+      "Model Deployment": {"aliases": ["model deployment", "ml deployment", "model serving"], "related": ["MLflow", "Docker", "FastAPI"]}
+    },
+    "Programming": {
+      "Python": {"aliases": ["python", "python3", "py"], "related": []},
+      "C++": {"aliases": ["c++", "cpp"], "related": []},
+      "Java": {"aliases": ["java"], "related": []},
+      "JavaScript": {"aliases": ["js", "javascript", "ecmascript"], "related": ["TypeScript"]},
+      "TypeScript": {"aliases": ["ts", "typescript"], "related": ["JavaScript"]},
+      "SQL": {"aliases": ["sql", "structured query language"], "related": ["PostgreSQL"]},
+      "R": {"aliases": ["r programming", "r language"], "related": ["Python"]}
+    },
+    "Cloud / DevOps": {
+      "AWS": {"aliases": ["aws", "amazon web services"], "related": ["Azure", "GCP", "Cloud Computing"]},
+      "Azure": {"aliases": ["azure", "microsoft azure"], "related": ["AWS", "GCP", "Cloud Computing"]},
+      "GCP": {"aliases": ["gcp", "google cloud", "google cloud platform"], "related": ["AWS", "Azure", "Cloud Computing"]},
+      "Cloud Computing": {"aliases": ["cloud computing", "cloud infrastructure"], "related": ["AWS", "Azure", "GCP"]},
+      "Docker": {"aliases": ["docker", "containerization", "containers"], "related": ["Kubernetes"]},
+      "Kubernetes": {"aliases": ["kubernetes", "k8s"], "related": ["Docker"]},
+      "CI/CD": {"aliases": ["ci/cd", "cicd", "continuous integration", "continuous deployment"], "related": ["Docker"]}
+    },
+    "Data": {
+      "PostgreSQL": {"aliases": ["postgres", "postgresql"], "related": ["SQL", "MySQL"]},
+      "MySQL": {"aliases": ["mysql"], "related": ["SQL", "PostgreSQL"]},
+      "MongoDB": {"aliases": ["mongodb", "mongo"], "related": ["NoSQL"]},
+      "NoSQL": {"aliases": ["nosql"], "related": ["MongoDB"]},
+      "Spark": {"aliases": ["apache spark", "spark", "pyspark"], "related": ["Data Engineering"]},
+      "Data Engineering": {"aliases": ["data engineering", "etl", "data pipelines"], "related": ["Spark", "Airflow"]},
+      "Airflow": {"aliases": ["airflow", "apache airflow"], "related": ["Data Engineering"]},
+      "Pandas": {"aliases": ["pandas"], "related": ["Python"]},
+      "NumPy": {"aliases": ["numpy"], "related": ["Python"]}
+    },
+    "Web / Backend": {
+      "FastAPI": {"aliases": ["fastapi", "fast api"], "related": ["Flask", "Django", "REST API"]},
+      "Django": {"aliases": ["django"], "related": ["Flask", "FastAPI"]},
+      "Flask": {"aliases": ["flask"], "related": ["FastAPI", "Django"]},
+      "REST API": {"aliases": ["rest api", "restful api", "rest"], "related": ["FastAPI", "GraphQL"]},
+      "GraphQL": {"aliases": ["graphql"], "related": ["REST API"]}
+    }
+  }
+}

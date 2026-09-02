@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "description": "A small, hand-authored set of synthetic resume/job pairs used to sanity-check HireLens AI's scoring during development. This is NOT a large, externally validated benchmark -- it is intentionally small (8 pairs) and was constructed specifically for this project to cover a spread from clearly-strong to clearly-weak matches. Labels are the author's own judgment, not ground truth from real hiring outcomes. Treat results computed against this set as a smoke test for score direction and ordering, not a claim of real-world accuracy.",
+    "label_scale": "expected_bucket: one of 'strong' (expected final_score >= 0.70), 'moderate' (0.40-0.70), 'weak' (< 0.40)",
+    "version": "0.1.0"
+  },
+  "pairs": [
+    {
+      "id": "pair_01_strong_ml_fit",
+      "expected_bucket": "strong",
+      "resume": "Jane Doe\njane@example.com | 555-1234\n\nSummary\nSenior ML engineer with 6 years of experience building production NLP and recommendation systems.\n\nExperience\nSenior ML Engineer, Acme Corp (2021-Present)\nDesigned and deployed transformer-based ranking models serving 2M requests/day using PyTorch and FastAPI, reducing latency by 35%.\n\nML Engineer, Beta Inc (2018-2021)\nBuilt ETL pipelines processing 500GB/day of data on AWS using Spark, and containerized services with Docker.\n\nSkills\nPython, PyTorch, SQL, AWS, Docker, FastAPI, Spark\n\nEducation\nM.S. Computer Science, UT Austin, 2018\n\nProjects\nRanking Service\nBuilt and load-tested a FastAPI ranking microservice handling 10k requests/sec.",
+      "job": "Senior Machine Learning Engineer\n\nResponsibilities\nDesign and deploy production ML systems for search and ranking.\n\nRequirements\n5+ years of experience in machine learning\nStrong Python and SQL skills\nExperience with Docker\nExperience with AWS\n\nPreferred\nFastAPI\nSpark\n\nEducation\nMaster's degree in Computer Science or related field preferred"
+    },
+    {
+      "id": "pair_02_strong_backend_fit",
+      "expected_bucket": "strong",
+      "resume": "John Smith\njohn@example.com | 555-9876\n\nSummary\nBackend engineer with 4 years building REST APIs and cloud infrastructure.\n\nExperience\nBackend Engineer, Widgets Co (2020-Present)\nBuilt and maintained REST APIs using FastAPI serving 1M requests/day, deployed on AWS with Docker and Kubernetes.\n\nSkills\nPython, FastAPI, AWS, Docker, Kubernetes, SQL, PostgreSQL\n\nEducation\nB.S. Computer Science, 2019",
+      "job": "Backend Engineer\n\nRequirements\n3+ years of experience\nPython\nFastAPI\nSQL\n\nPreferred\nDocker\nKubernetes\nAWS"
+    },
+    {
+      "id": "pair_03_moderate_partial_stack",
+      "expected_bucket": "moderate",
+      "resume": "Alex Lee\nalex@example.com\n\nSummary\nData analyst transitioning into machine learning.\n\nExperience\nData Analyst, RetailCo (2021-Present)\nAnalyzed sales data using SQL and Python, built dashboards in Excel.\n\nSkills\nPython, SQL, Pandas\n\nEducation\nB.A. Economics, 2020",
+      "job": "Machine Learning Engineer\n\nRequirements\n2+ years of experience\nPython\nMachine Learning\nSQL\n\nPreferred\nAWS\nDocker\nTensorFlow"
+    },
+    {
+      "id": "pair_04_moderate_experience_short",
+      "expected_bucket": "moderate",
+      "resume": "Priya Nair\npriya@example.com\n\nExperience\nJunior ML Engineer, StartupX (2023-Present)\nBuilt classification models using Scikit-learn and Python.\n\nSkills\nPython, Scikit-learn, Machine Learning\n\nEducation\nB.S. Computer Science, 2023",
+      "job": "Senior Machine Learning Engineer\n\nRequirements\n5+ years of experience in machine learning\nPython\nDeep Learning\nAWS\n\nPreferred\nDocker\nKubernetes"
+    },
+    {
+      "id": "pair_05_weak_wrong_domain",
+      "expected_bucket": "weak",
+      "resume": "Sam Rivera\nsam@example.com\n\nSummary\nMarketing coordinator with 5 years running social media campaigns.\n\nExperience\nMarketing Coordinator, BrandCo (2019-Present)\nRan social media campaigns and managed content calendars.\n\nSkills\nContent Marketing, Social Media, Adobe Photoshop\n\nEducation\nB.A. Communications, 2018",
+      "job": "Senior Machine Learning Engineer\n\nRequirements\n5+ years of experience in machine learning\nPython\nDeep Learning\nAWS\n\nPreferred\nDocker\nMLflow"
+    },
+    {
+      "id": "pair_06_weak_junior_vs_senior_gap",
+      "expected_bucket": "weak",
+      "resume": "Taylor Kim\ntaylor@example.com\n\nEducation\nB.S. Computer Science, 2024\n\nSkills\nPython, HTML, CSS",
+      "job": "Senior Machine Learning Engineer\n\nRequirements\n7+ years of experience in machine learning\nPython\nDeep Learning\nAWS\nKubernetes\n\nPreferred\nMLflow\nSpark"
+    },
+    {
+      "id": "pair_07_strong_data_engineering_fit",
+      "expected_bucket": "strong",
+      "resume": "Morgan Chen\nmorgan@example.com | 555-4321\n\nSummary\nData engineer with 5 years building large-scale ETL pipelines.\n\nExperience\nData Engineer, DataCorp (2019-Present)\nBuilt ETL pipelines processing terabytes of data daily using Spark and Airflow, deployed on AWS with Docker.\n\nSkills\nPython, SQL, Spark, Airflow, AWS, Docker\n\nEducation\nB.S. Computer Science, 2018",
+      "job": "Senior Data Engineer\n\nRequirements\n4+ years of experience in data engineering\nPython\nSQL\nSpark\nAWS\n\nPreferred\nAirflow\nDocker"
+    },
+    {
+      "id": "pair_08_moderate_missing_cloud",
+      "expected_bucket": "moderate",
+      "resume": "Robin Patel\nrobin@example.com\n\nSummary\nML engineer with 4 years of experience.\n\nExperience\nML Engineer, ModelWorks (2020-Present)\nBuilt deep learning models using PyTorch and TensorFlow for image classification.\n\nSkills\nPython, PyTorch, TensorFlow, Machine Learning\n\nEducation\nM.S. Computer Science, 2019",
+      "job": "Machine Learning Engineer\n\nRequirements\n3+ years of experience in machine learning\nPython\nDeep Learning\nAWS\nDocker\n\nPreferred\nKubernetes"
+    }
+  ]
+}

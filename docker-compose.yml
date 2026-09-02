@@ -1,0 +1,22 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    environment:
+      - MLFLOW_TRACKING_URI=./mlruns
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
