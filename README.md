@@ -7,7 +7,7 @@ fallback), explainable scoring, resume quality analysis, a prioritized skill-gap
 roadmap, a Streamlit dashboard, a FastAPI service, Docker packaging, and an
 evaluation harness with real (not fabricated) metrics.
 
-> **Build status: all 24 steps of the spec's build order are implemented.**
+> "Status: all core pipeline stages are implemented."
 > Every piece of pure Python/NLP/ML logic (ingestion, parsing, skill extraction,
 > TF-IDF, hybrid matching, scoring, quality analysis, recommendations, roadmap,
 > evaluation metrics) is **written and unit-tested — 27/27 tests passing** in
