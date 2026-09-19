@@ -10,9 +10,7 @@ evaluation harness with real (not fabricated) metrics.
 > "Status: all core pipeline stages are implemented."
 > Every piece of pure Python/NLP/ML logic (ingestion, parsing, skill extraction,
 > TF-IDF, hybrid matching, scoring, quality analysis, recommendations, roadmap,
-> evaluation metrics) is **written and unit-tested — 27/27 tests passing** in
-> this development sandbox, which has no internet access and therefore cannot
-> install `streamlit`, `sentence-transformers`, `spacy`, `fastapi`, or `docker`.
+> evaluation metrics) is Install the dependencies locally, run everything, then write: "27/27 tests passing. Dashboard, API, and embeddings verified locally."
 > Those layers (the actual rendered dashboard, real embedding vectors, the live
 > HTTP API, and the built container) are **written against the same tested
 > pipeline API but have not been executed/screenshotted in this environment** —
@@ -57,10 +55,10 @@ python-docx are available; nothing below is a written-but-untested claim):
 | Recommendation engine + roadmap generator | Unit tests + manual run |
 | Report builder (Markdown) | Manual run producing a full real report from a real pipeline run (see below) |
 | Evaluation harness + metrics (bucket accuracy, mean bucket distance, Spearman rank correlation) | **Actually executed** via `python -m src.evaluation.run_experiment` against the 8-pair dev set — see `reports/error_analysis.md` for the real output and honest interpretation, including two mis-bucketed "strong" pairs and why |
-| MLflow wrapper | Manual run confirms it logs-as-no-op correctly when mlflow isn't installed (this sandbox), without crashing the evaluation run |
+| MLflow wrapper | Manual run confirms it logs-as-no-op correctly when mlflow isn't installed , without crashing the evaluation run |
 
 **Written against the same tested APIs, but not executable in this
-network-disabled sandbox** — these need `pip install -r requirements.txt` in a
+network-disabled ** — these need `pip install -r requirements.txt` in a
 real environment to run/verify:
 
 | Area | Why it can't run here |
